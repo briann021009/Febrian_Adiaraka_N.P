@@ -1,45 +1,374 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Informasi Tema – [Nama Lengkap]</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Tech Essentials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Menu Navigasi -->
-  <nav class="menu-bar">
-    <ul>
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="informasi.html">Informasi Tema</a></li>
-    </ul>
-  </nav>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>Tech Essentials</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="informasi.html" class="active"><i class="fas fa-info-circle"></i> Informasi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Konten Tema -->
-  <main>
-    <section class="tema">
-      <h2>Tema 1: Software</h2>
-      <p><strong>Fungsi:</strong> Mengelola data dan menjalankan aplikasi di komputer.</p>
-      <p><strong>Kegunaan:</strong> Menulis dokumen, mengedit foto, browsing internet.</p>
-      <p><strong>Contoh Alat:</strong></p>
-      <ul>
-        <li>Microsoft Word <img src="word.png" alt="Word" class="ikon"></li>
-        <li>Adobe Photoshop <img src="photoshop.png" alt="Photoshop" class="ikon"></li>
-        <li>Google Chrome <img src="chrome.png" alt="Chrome" class="ikon"></li>
-      </ul>
-    </section>
+    <div class="page-header">
+        <h1>Dunia <span>Software & Hardware</span></h1>
+        <p>Mempelajari teknologi yang menggerakkan inovasi digital</p>
+    </div>
 
-    <section class="tema">
-      <h2>Tema 2: Hardware</h2>
-      <p><strong>Fungsi:</strong> Menyediakan komponen fisik agar komputer dapat bekerja.</p>
-      <p><strong>Kegunaan:</strong> Menyimpan data, memproses program, menampilkan output.</p>
-      <p><strong>Contoh Alat:</strong></p>
-      <ul>
-        <li>Hard Disk Drive <img src="hdd.png" alt="HDD" class="ikon"></li>
-        <li>RAM <img src="ram.png" alt="RAM" class="ikon"></li>
-        <li>Monitor <img src="monitor.png" alt="Monitor" class="ikon"></li>
-      </ul>
-    </section>
-  </main>
+    <main>
+        <section class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-id="software">
+                    <i class="fas fa-code"></i> Software
+                </button>
+                <button class="tab-btn" data-id="hardware">
+                    <i class="fas fa-server"></i> Hardware
+                </button>
+                <button class="tab-btn" data-id="integration">
+                    <i class="fas fa-link"></i> Integrasi
+                </button>
+            </div>
+
+            <div class="tab-content">
+                <!-- SOFTWARE TAB -->
+                <div class="content active" id="software">
+                    <div class="content-header">
+                        <h2>Software <span>(Perangkat Lunak)</span></h2>
+                        <p>Software adalah kumpulan instruksi, data, atau program yang memberikan "jiwa" pada sistem komputer. Tanpa software, hardware hanyalah komponen elektronik tanpa tujuan.</p>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                            <h3>Sistem Operasi</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="Sistem Operasi" class="card-img">
+                            <div class="card-content">
+                                <p>Sistem operasi mengelola hardware dan menyediakan platform untuk program aplikasi berjalan. Ini adalah perantara antara pengguna dan hardware komputer.</p>
+                                <h4>Contoh:</h4>
+                                <div class="tags">
+                                    <span>Windows</span>
+                                    <span>macOS</span>
+                                    <span>Linux</span>
+                                    <span>Android</span>
+                                    <span>iOS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-file-code"></i></div>
+                            <h3>Aplikasi</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="Aplikasi" class="card-img">
+                            <div class="card-content">
+                                <p>Software aplikasi adalah program yang dirancang untuk menyelesaikan tugas spesifik pengguna, mulai dari produktivitas hingga hiburan.</p>
+                                <h4>Contoh:</h4>
+                                <div class="tags">
+                                    <span>Microsoft Office</span>
+                                    <span>Adobe Creative Cloud</span>
+                                    <span>Web Browser</span>
+                                    <span>Media Player</span>
+                                    <span>Game</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                            <h3>Bahasa Pemrograman</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="Bahasa Pemrograman" class="card-img">
+                            <div class="card-content">
+                                <p>Bahasa pemrograman memungkinkan pengembang untuk menciptakan software dengan memberikan instruksi yang dapat dimengerti komputer.</p>
+                                <h4>Contoh:</h4>
+                                <div class="tags">
+                                    <span>Python</span>
+                                    <span>JavaScript</span>
+                                    <span>Java</span>
+                                    <span>C++</span>
+                                    <span>HTML/CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features-container">
+                        <h3>Fungsi Utama Software</h3>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-cogs"></i>
+                                <h4>Mengendalikan Hardware</h4>
+                                <p>Mengatur dan mengoordinasikan operasi komponen hardware.</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-tasks"></i>
+                                <h4>Pemrosesan Data</h4>
+                                <p>Mengolah input menjadi output yang berguna.</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-circle"></i>
+                                <h4>Antarmuka Pengguna</h4>
+                                <p>Menyediakan cara untuk pengguna berinteraksi dengan komputer.</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Meningkatkan Produktivitas</h4>
+                                <p>Memungkinkan pengguna menyelesaikan tugas lebih efisien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HARDWARE TAB -->
+                <div class="content" id="hardware">
+                    <div class="content-header">
+                        <h2>Hardware <span>(Perangkat Keras)</span></h2>
+                        <p>Hardware adalah komponen fisik yang dapat dilihat dan disentuh. Ini membentuk "tubuh" dari sistem komputer yang menjalankan instruksi software.</p>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                            <h3>Prosesor (CPU)</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="CPU" class="card-img">
+                            <div class="card-content">
+                                <p>CPU (Central Processing Unit) adalah "otak" komputer yang memproses instruksi dan melakukan perhitungan. Kecepatan dan kemampuan CPU menentukan performa komputer.</p>
+                                <h4>Contoh:</h4>
+                                <div class="tags">
+                                    <span>Intel Core</span>
+                                    <span>AMD Ryzen</span>
+                                    <span>Apple M1/M2</span>
+                                    <span>Qualcomm Snapdragon</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-memory"></i></div>
+                            <h3>Memori (RAM)</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="RAM" class="card-img">
+                            <div class="card-content">
+                                <p>RAM (Random Access Memory) adalah tempat penyimpanan data sementara yang digunakan CPU saat menjalankan program. Semakin besar RAM, semakin banyak program yang dapat berjalan bersamaan.</p>
+                                <h4>Jenis:</h4>
+                                <div class="tags">
+                                    <span>DDR4</span>
+                                    <span>DDR5</span>
+                                    <span>LPDDR4X</span>
+                                    <span>HBM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-hdd"></i></div>
+                            <h3>Penyimpanan</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="Storage" class="card-img">
+                            <div class="card-content">
+                                <p>Media penyimpanan menyimpan data secara permanen bahkan ketika komputer dimatikan. Ini menyimpan sistem operasi, program, dan file pengguna.</p>
+                                <h4>Jenis:</h4>
+                                <div class="tags">
+                                    <span>SSD</span>
+                                    <span>HDD</span>
+                                    <span>NVMe</span>
+                                    <span>eMMC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <h3>Motherboard</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="Motherboard" class="card-img">
+                            <div class="card-content">
+                                <p>Motherboard adalah papan sirkuit utama tempat semua komponen hardware terhubung. Ini memungkinkan komunikasi antar komponen dan menentukan kemampuan upgrade sistem.</p>
+                                <h4>Fitur:</h4>
+                                <div class="tags">
+                                    <span>Socket CPU</span>
+                                    <span>Slot RAM</span>
+                                    <span>PCIe</span>
+                                    <span>Chipset</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-keyboard"></i></div>
+                            <h3>Perangkat Input</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="Input Devices" class="card-img">
+                            <div class="card-content">
+                                <p>Perangkat input memungkinkan pengguna memasukkan data dan instruksi ke dalam komputer untuk diproses.</p>
+                                <h4>Contoh:</h4>
+                                <div class="tags">
+                                    <span>Keyboard</span>
+                                    <span>Mouse</span>
+                                    <span>Touchscreen</span>
+                                    <span>Webcam</span>
+                                    <span>Scanner</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-tv"></i></div>
+                            <h3>Perangkat Output</h3>
+                            <img src="https://via.placeholder.com/400x225" alt="Output Devices" class="card-img">
+                            <div class="card-content">
+                                <p>Perangkat output menampilkan hasil pemrosesan komputer dalam format yang dapat dipahami manusia.</p>
+                                <h4>Contoh:</h4>
+                                <div class="tags">
+                                    <span>Monitor</span>
+                                    <span>Printer</span>
+                                    <span>Speaker</span>
+                                    <span>Proyektor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INTEGRATION TAB -->
+                <div class="content" id="integration">
+                    <div class="content-header">
+                        <h2>Integrasi <span>Software & Hardware</span></h2>
+                        <p>Software dan hardware bekerja bersama dalam harmoni sempurna untuk membentuk sistem komputer yang fungsional.</p>
+                    </div>
+
+                    <div class="integration-showcase">
+                        <div class="showcase-card">
+                            <i class="fas fa-laptop"></i>
+                            <h3>Bagaimana Software dan Hardware Berinteraksi</h3>
+                            <p>Ketika Anda melakukan aktivitas seperti mengetik dokumen, sejumlah proses kompleks terjadi:</p>
+                            
+                            <div class="process-flow">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Input</h4>
+                                        <p>Anda menekan tombol pada keyboard (hardware)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Pemrosesan Sinyal</h4>
+                                        <p>Motherboard dan driver keyboard (software) menerjemahkan sinyal elektrik</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Aplikasi Memproses</h4>
+                                        <p>Program pengolah kata (software) menerima input dan menyimpan dalam RAM (hardware)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Menampilkan Hasil</h4>
+                                        <p>GPU (hardware) dan driver grafis (software) memproses dan menampilkan karakter di layar</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Penyimpanan</h4>
+                                        <p>Saat menyimpan, sistem file (software) menulis data ke penyimpanan (hardware)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="integration-principles">
+                        <h3>Prinsip Kunci Integrasi</h3>
+                        <div class="principles-container">
+                            <div class="principle">
+                                <i class="fas fa-sync"></i>
+                                <h4>Ketergantungan Mutual</h4>
+                                <p>Hardware tidak berfungsi tanpa software, dan software membutuhkan hardware untuk dijalankan.</p>
+                            </div>
+                            
+                            <div class="principle">
+                                <i class="fas fa-layer-group"></i>
+                                <h4>Lapisan Abstraksi</h4>
+                                <p>Software menyediakan lapisan abstraksi yang menyembunyikan kompleksitas hardware dari pengguna.</p>
+                            </div>
+                            
+                            <div class="principle">
+                                <i class="fas fa-arrows-alt"></i>
+                                <h4>Skalabilitas</h4>
+                                <p>Sistem yang dirancang dengan baik memungkinkan peningkatan hardware atau software tanpa mengganggu yang lain.</p>
+                            </div>
+                            
+                            <div class="principle">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <h4>Optimalisasi Performa</h4>
+                                <p>Software yang efisien memaksimalkan kemampuan hardware, dan hardware yang kuat meningkatkan kemampuan software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-microchip"></i>
+                <span>Tech Essentials</span>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 - Tugas PAUJ - [Nama Lengkap]</p>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Beranda</a>
+                <a href="informasi.html">Informasi</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab-btn');
+        const allContent = document.querySelectorAll('.content');
+        
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                const target = document.getElementById(tab.dataset.id);
+                
+                // Remove active class from all tabs and content
+                tabs.forEach(t => t.classList.remove('active'));
+                allContent.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to current tab and content
+                tab.classList.add('active');
+                target.classList.add('active');
+            });
+        });
+    </script>
 </body>
-</html>
+</html>an data secara permanen. Contoh: HDD (Hard Disk Drive), SSD (Solid State Drive), USB flash drive.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Motherboard">
+                            <div class="item-info">
+                                <h5>Motherboard</h5>
+                             
